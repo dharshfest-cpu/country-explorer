@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h1>🌍 Country Explorer</h1>
+      <p class="subtitle">Search for a country and get live information from a free API.</p>
+
+      <div class="search-box">
+        <input id="countryInput" type="text" placeholder="Enter country name..." autocomplete="off">
+        <button id="searchButton">Search</button>
+      </div>
+
+      <p id="message"></p>
+
+      <div id="countryDetails" class="country-card hidden">
+        <img id="flag" src="" alt="Country flag">
+        <h2 id="countryName"></h2>
+
+        <div class="details">
+          <div class="detail"><span>🏛️ Capital</span><strong id="capital"></strong></div>
+          <div class="detail"><span>👥 Population</span><strong id="population"></strong></div>
+          <div class="detail"><span>🌎 Region</span><strong id="region"></strong></div>
+          <div class="detail"><span>📍 Sub Region</span><strong id="subregion"></strong></div>
+          <div class="detail"><span>💰 Currency</span><strong id="currency"></strong></div>
+          <div class="detail"><span>🗣️ Languages</span><strong id="languages"></strong></div>
+          <div class="detail"><span>🔤 Country Code</span><strong id="code"></strong></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>Country Explorer • Powered by countries.dev API</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
